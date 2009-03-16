@@ -1,0 +1,72 @@
+body {
+  font-family: Verdana;
+  font-size: 10pt; }
+
+#sidebar address {
+  margin-top: 10px;
+  font-style: normal; }
+#sidebar h5 {
+  font-weight: normal;
+  margin-bottom: 0; }
+
+.content .header {
+  text-transform: uppercase;
+  background-color: #F6822B;
+  color: white;
+  font-size: 14px;
+  padding-left: 15px;
+  margin-bottom: 3px; }
+.content .details {
+  border: 1px solid black;
+  margin-bottom: 20px; }
+  .content .details h3 {
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 4px; }
+  .content .details p {
+    color: #999;
+    font-weight: bold;
+    line-height: 1em; }
+
+.stacey {
+  width: 116px;
+  background-color: #F6822B;
+  padding: 10px;
+  font-size: 9px;
+  line-height: 1.2em; }
+
+#menu {
+  margin-left: 0; }
+  #menu li {
+    list-style-type: none;
+    margin-left: 0px; }
+  #menu li {
+    border-bottom: 1px dashed black;
+    margin-top: 10px; }
+    #menu li a {
+      text-transform: uppercase;
+      text-decoration: none;
+      padding-top: 10px;
+      color: black; }
+      #menu li a:hover {
+        text-decoration: underline; }
+      #menu li a:visited {
+        color: black; }
+
+.footer {
+  margin-top: 30px; }
+  .footer .quote {
+    text-transform: uppercase;
+    color: #FFB15F;
+    text-align: center;
+    line-height: 1em;
+    font-size: 20px; }
+    .footer .quote .tagline {
+      font-style: italic;
+      font-size: 24px; }
+    .footer .quote .author {
+      font-size: 12px; }
+  .footer .testimonial {
+    background-color: #F6822B;
+    padding: 10px;
+    color: #EEE; }
