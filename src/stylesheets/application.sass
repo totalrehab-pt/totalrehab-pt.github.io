@@ -1,8 +1,25 @@
+//!main-orange = #FF6909
+
+// Turn off the bullet for an element of a list
+=no-bullet
+  :list-style-type none
+  :margin-left 0px
+
+// turns off the bullets for an entire list
+=no-bullets
+  li
+    +no-bullet
+
 body
   :font
     :family Verdana
     :size 10pt
 
-.orange
-  :background-color #FF6909
-  
+#menu
+  +no-bullets
+  li
+    :border-bottom 1px dashed black
+    :text-transform uppercase
+    :margin-top 10px
+    a
+      :padding-top 10px
