@@ -1,7 +1,7 @@
 .container
-  .span-24.header
+  .span-22.header
     = img 'TotalRehab_template/TotalRehab_header.jpg'
-  .span-24.content
+  .span-22.content
     #sidebar.span-4
       %ul#menu
         %li= link 'Home'
@@ -66,11 +66,29 @@
         %br
         Certified Strength and Conditioning Specialist
 
-  .span-24.footer
-    = img 'TotalRehab_template/TotalRehab-footer.jpg'
+  .span-22.footer
+    .quote.span-10
+      .tagline Never give up.  
+      For that is just the place
+      %br
+      and time the tide will turn.
+      .author - Harriet Beecher Stowe
+
+    .span-3
+      %br
+
+    .testimonial.span-8.last
+      I liked the service I received at Total Rehab. I liked the service I received at Total Rehab.
+      I liked the service I received at Total Rehab.
+      I liked the service I received at Total Rehab.
+      I liked the service I received at Total Rehab.
+      I liked the service I received at Total Rehab.
+      I liked the service I received at Total Rehab.
+      I liked the service I received at Total Rehab.
 
   :javascript
     $(document).ready(function() {
       $('.header').corner('round tl');
       $('.stacey').corner('round bl');
+      $('.testimonial').corner('round tl');
     })
