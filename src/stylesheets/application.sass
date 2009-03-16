@@ -10,6 +10,16 @@
   li
     +no-bullet
 
+//make text uppercase
+=uppercase
+  :text-transform uppercase
+
+// a link that only has an underline when you hover over it
+=hover-link
+  :text-decoration none
+  &:hover
+    :text-decoration underline
+
 body
   :font
     :family Verdana
@@ -17,9 +27,14 @@ body
 
 #menu
   +no-bullets
+  :margin-left 0
   li
     :border-bottom 1px dashed black
-    :text-transform uppercase
     :margin-top 10px
     a
+      +uppercase
+      +hover-link
       :padding-top 10px
+      :color black
+      &:visited
+        :color black
