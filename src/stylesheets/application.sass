@@ -1,4 +1,4 @@
-//!main-orange = #FF6909
+//!main-orange = #F6822B
 
 // Turn off the bullet for an element of a list
 =no-bullet
@@ -33,8 +33,21 @@ body
     :font-weight normal
     :margin-bottom 0
 
-#patients
-  :border 1px solid black
+.content
+  .header
+    +uppercase
+    :background-color #F6822B
+    :color white
+    :font-size 14px
+    :padding-left 20px
+  h3
+    :font-size 12px
+    :font-weight bold
+    :margin-bottom 4px
+  p
+    :color #999
+    :font-weight bold
+    :line-height 1em
 
 #menu
   +no-bullets
