@@ -64,11 +64,20 @@ body
           :list-style-image url(../images/bullet.png)
           li
             :text-transform none
+      strong
+        :color #FFB15F
+        +uppercase
 
-    strong
-      :color #FFB15F
-      +uppercase
 
+ul.homepage
+  :list-style-image none
+  li
+    :font-weight bold
+    ul
+      :list-style-image url(../images/bullet.png)
+      %li
+      :color #999
+      
 .caption
   :width 116px
   :background-color #F6822B
