@@ -26,9 +26,24 @@ body {
   .content .details p {
     color: #999;
     font-weight: bold;
-    line-height: 1em; }
+    line-height: 1em;
+    margin: 0 0 .5em; }
+  .content .details ul.checklist {
+    list-style-image: url(../images/checkmark.png); }
+    .content .details ul.checklist li {
+      text-transform: uppercase;
+      font-weight: bold; }
+      .content .details ul.checklist li p.description {
+        text-transform: none; }
+      .content .details ul.checklist li ul {
+        list-style-image: url(../images/bullet.png); }
+        .content .details ul.checklist li ul li {
+          text-transform: none; }
+  .content .details strong {
+    color: #FFB15F;
+    text-transform: uppercase; }
 
-.stacey {
+.caption {
   width: 116px;
   background-color: #F6822B;
   padding: 10px;
@@ -50,13 +65,18 @@ body {
       color: black; }
       #menu li a:hover {
         text-decoration: underline; }
+      #menu li a:hover {
+        color: #FFB15F; }
       #menu li a:visited {
         color: black; }
+        #menu li a:visited:hover {
+          color: #FFB15F; }
 
 .footer {
   margin-top: 30px; }
   .footer .quote {
     text-transform: uppercase;
+    padding-top: 10px;
     color: #FFB15F;
     text-align: center;
     line-height: 1em;
@@ -69,4 +89,7 @@ body {
   .footer .testimonial {
     background-color: #F6822B;
     padding: 10px;
-    color: #EEE; }
+    color: #EEE;
+    text-align: center; }
+    .footer .testimonial .author {
+      margin-top: 10px; }
