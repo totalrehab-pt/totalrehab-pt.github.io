@@ -52,10 +52,19 @@ body
       :color #999
       :font-weight bold
       :line-height 1em
+      :margin 0 0 .5em
     ul
       :list-style-image url(../images/bullet.png)
       &.checklist
         :list-style-image url(../images/checkmark.png)
+        li
+          +uppercase
+          :font-weight bold
+          p.description
+            :text-transform none
+    strong
+      :color #FFB15F
+      +uppercase
 
 .caption
   :width 116px
