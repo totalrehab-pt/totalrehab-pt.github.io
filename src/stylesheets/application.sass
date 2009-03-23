@@ -53,15 +53,18 @@ body
       :font-weight bold
       :line-height 1em
       :margin 0 0 .5em
-    ul
-      :list-style-image url(../images/bullet.png)
-      &.checklist
-        :list-style-image url(../images/checkmark.png)
-        li
-          +uppercase
-          :font-weight bold
-          p.description
+    ul.checklist
+      :list-style-image url(../images/checkmark.png)
+      li
+        +uppercase
+        :font-weight bold
+        p.description
+          :text-transform none
+        ul
+          :list-style-image url(../images/bullet.png)
+          li
             :text-transform none
+
     strong
       :color #FFB15F
       +uppercase
@@ -84,8 +87,12 @@ body
       +hover-link
       :padding-top 10px
       :color black
+      &:hover
+        :color #FFB15F
       &:visited
         :color black
+        &:hover
+          :color #FFB15F
 
 .footer
   :margin-top 30px
