@@ -14,11 +14,12 @@
   %body
     .container
       .span-22.header
-        = img 'TotalRehab_template/TotalRehab_header.jpg'
+        = img 'header.jpg'
       .span-22
         #sidebar.span-4
           %ul#menu
-            %li= link 'Home'
+            %li
+              %a{:href => 'index.html'} Home
             %li= link 'Philosophy'
             %li= link 'Our Staff'
             %li= link 'Pediatric'
