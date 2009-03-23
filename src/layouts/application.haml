@@ -6,4 +6,55 @@
     = blueprintcss :show_grid => false, :compressed => false
     = javascripts :jquery, 'jquery.curvycorners'
   %body
-    = yield
+    .container
+      .span-22.header
+        = img 'TotalRehab_template/TotalRehab_header.jpg'
+      .span-22
+        #sidebar.span-4
+          %ul#menu
+            %li= link 'Home'
+            %li= link 'Philosophy'
+            %li= link 'Our Staff'
+            %li= link 'Pediatric'
+            %li= link 'Industrial Rehab'
+            %li= link 'Sports Enhancement'
+            %li= link 'Contact Us'
+
+          %h5 Total Rehab
+          641-236-4506
+
+          %address
+            Southview Plaza-Suite D
+            %br
+            234 West Street South
+            %br
+            Grinnell, IA 50112
+
+          %h5 Hours
+          7:30am - 6:00pm
+
+          %br
+          %a{:href => 'mailto:stacey@totalrehab-pt.com'} stacey@totalrehab-pt.com
+
+        .span-28.last
+          = yield
+
+        .span-22.footer
+          .quote.span-10
+            .tagline Never give up.  
+            For that is just the place
+            %br
+            and time the tide will turn.
+            .author - Harriet Beecher Stowe
+
+          .span-3
+            %br
+
+          .testimonial.span-8.last
+            I liked the service I received at Total Rehab. I liked the service I received at Total Rehab.
+            I liked the service I received at Total Rehab.
+            I liked the service I received at Total Rehab.
+            I liked the service I received at Total Rehab.
+            I liked the service I received at Total Rehab.
+            I liked the service I received at Total Rehab.
+            I liked the service I received at Total Rehab.
