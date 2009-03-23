@@ -39,9 +39,17 @@ body {
         list-style-image: url(../images/bullet.png); }
         .content .details ul.checklist li ul li {
           text-transform: none; }
-  .content .details strong {
-    color: #FFB15F;
-    text-transform: uppercase; }
+    .content .details ul.checklist strong {
+      color: #FFB15F;
+      text-transform: uppercase; }
+
+ul.homepage {
+  list-style-image: none; }
+  ul.homepage li {
+    font-weight: bold; }
+    ul.homepage li ul {
+      list-style-image: url(../images/bullet.png);
+      color: #999; }
 
 .caption {
   width: 116px;
