@@ -8,16 +8,9 @@
     <!--[if IE]>
       <link href="stylesheets/blueprint/lib/ie.css" media="screen, projection" rel="stylesheet" type="text/css"/>
     <![endif]-->
-    <script language="javascript" src="javascripts/jquery.js" type="text/javascript"></script><script language="javascript" src="javascripts/jquery.curvycorners.js" type="text/javascript"></script>
-    <script type='text/javascript'>
-      //<![CDATA[
-        $(document).ready(function() {
-          $('.header').corner('round tl');
-          $('.caption').corner('round bl');
-          $('.testimonial').corner('round tl');
-        });
-      //]]>
-    </script>
+    <!--[if lt IE 8]> 
+      <script language="javascript" src="javascripts/rounded.js" type="text/javascript"></script><script language="javascript" src="javascripts/ie.js" type="text/javascript"></script>
+    <![endif]-->
   </head>
   <body>
     <div class='container'>
@@ -40,7 +33,7 @@
           <h5>Total Rehab</h5>
           641-236-4506
           <address>
-            Southview Plaza-Suite D
+            Southview Plaza-Suite #4
             <br />
             234 West Street South
             <br />
@@ -64,14 +57,14 @@
                     <li>
                       Business Summary
                       <p class='description'>
-                        Total Rehab is a locally owned, private practice, full service Physical Therapy clinic. Total Rehab specializes in orthopedic injury rehabilitation and Sports Medicine services. Our objective is to provide reliable, high quality Physical Therapy services with positive treatment outcomes. We strive to provide an energetic environment with the latest in rehabilitation equipment.
+                        Total Rehab is a locally owned, private practice, full service Physical and Occupational Therapy Clinic. Total Rehab specializes in orthopedic injury rehabilitation, pediatrics, sports medicine, and Industrial services. Our objective is to provide reliable, high quality services with positive treatment outcomes. We strive to provide an energetic environment with the latest in rehabilitation equipment.
                       </p>
                     </li>
                     <li>
                       The Total Rehab Advantage -
-                      <strong>One On One Care</strong>
+                      <em>One On One Care</em>
                       <p class='description'>
-                        Every patient will be guaranteed one on one care from a licensed Physical Therapist from the initial evaluation to the final treatment.
+                        Every patient will be guaranteed one on one care from a licensed Physical or Occupational Therapist from the initial evaluation to the final treatment.
                       </p>
                     </li>
                     <li>
@@ -83,7 +76,7 @@
                     <li>
                       Specialization of Training
                       <p class='description'>
-                        Stacey Alberts is a licensed Physical Therapist (PT), a Certified Strength and Conditioning Specialist, and is in process of obtaining an Orthopedic Clinical Specialist (OCS) certification. Stacey also has additional training in sideline sports injury coverage, has an extensive history of NCAA athletic competition, and has been developing and administering sport enhancement programs for four years.
+                        <a href='our_staff.html'>every therapist has a specialty of training in which they excel in order to serve you better.</a>
                       </p>
                     </li>
                   </ul>
@@ -96,11 +89,11 @@
           </div>
           <div class='span-4 last right_column'>
             <img alt="Facilities" src="images/facilities.png"/>
-            <p class='caption'>
+            <div class='caption'>
               State of the art facility
               <br />
-              Private practice and locally owned and operated
-            </p>
+              Private practice locally owned and operated
+            </div>
           </div>
         </div>
         <div class='span-22 footer'>

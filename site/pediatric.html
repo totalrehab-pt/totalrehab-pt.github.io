@@ -8,16 +8,9 @@
     <!--[if IE]>
       <link href="stylesheets/blueprint/lib/ie.css" media="screen, projection" rel="stylesheet" type="text/css"/>
     <![endif]-->
-    <script language="javascript" src="javascripts/jquery.js" type="text/javascript"></script><script language="javascript" src="javascripts/jquery.curvycorners.js" type="text/javascript"></script>
-    <script type='text/javascript'>
-      //<![CDATA[
-        $(document).ready(function() {
-          $('.header').corner('round tl');
-          $('.caption').corner('round bl');
-          $('.testimonial').corner('round tl');
-        });
-      //]]>
-    </script>
+    <!--[if lt IE 8]> 
+      <script language="javascript" src="javascripts/rounded.js" type="text/javascript"></script><script language="javascript" src="javascripts/ie.js" type="text/javascript"></script>
+    <![endif]-->
   </head>
   <body>
     <div class='container'>
@@ -40,7 +33,7 @@
           <h5>Total Rehab</h5>
           641-236-4506
           <address>
-            Southview Plaza-Suite D
+            Southview Plaza-Suite #4
             <br />
             234 West Street South
             <br />
@@ -116,13 +109,13 @@
           </div>
           <div class='span-4 last right_column'>
             <img alt="Linda" src="images/linda.png"/>
-            <p class='caption'>
+            <div class='caption'>
               Occupational Therapist
               <br />
               Registered, Licensed
               <br />
               15 years experience
-            </p>
+            </div>
           </div>
         </div>
         <div class='span-22 footer'>
