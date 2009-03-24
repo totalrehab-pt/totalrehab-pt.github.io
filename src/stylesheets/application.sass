@@ -78,28 +78,30 @@ div.content
     :border 1px solid black
     :margin-bottom 20px
     h3
-      :font-size 12px
+      :font-size 1.2em
       :font-weight bold
-      :margin-bottom 4px
+      :margin 5px
+      :padding 0px
     p
+      :margin 5px
+      :padding 0px
       :color #999
       :font-weight bold
-      :line-height 1em
-      :margin 0 0 .5em
+      :line-height 1.2em
     ul.checklist
       :list-style-image url(../images/checkmark.png)
+      :padding 5px
       li
         +uppercase
         :font-weight bold
         p.description
           :text-transform none
-        ul
-          :list-style-image url(../images/bullet.png)
-          li
-            :text-transform none
-      strong
-        :color #FFB15F
-        +uppercase
+    ul
+      :list-style-image url(../images/bullet.png)
+
+em
+  :color #FFB15F
+  +uppercase
 
 
 ul.homepage
