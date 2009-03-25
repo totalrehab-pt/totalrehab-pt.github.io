@@ -39,7 +39,10 @@
           %a{:href => 'mailto:stacey@totalrehab-pt.com'} stacey@totalrehab-pt.com
 
         .span-28.last
-          = yield
+          .span-14.content
+            = yield
+          .span-4.last
+            = partial current_page[1, current_page.index('.') - 1]
 
         .span-22.footer
           .quote.span-10
