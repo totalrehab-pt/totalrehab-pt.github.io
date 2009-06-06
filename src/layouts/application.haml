@@ -4,24 +4,22 @@
     %title Total Rehab - Orthopedic and Sports Specialist
     = stylesheets
     = blueprintcss :show_grid => false, :compressed => false
-    /[if lt IE 8]
-      = javascripts :rounded, :ie
   %body
     .container
-      .span-22.header
+      #header.span-22
         = img 'header.jpg'
+      #navigation.span-22
+        %ul#menu
+          %li
+            %a{:href => 'index.html'} Home
+          %li= link 'Philosophy'
+          %li= link 'Our Staff'
+          %li= link 'Pediatric'
+          %li= link 'Industrial Rehab'
+          %li= link 'Sports Enhancement'
+          %li= link 'Contact Us'
       .span-22
-        #sidebar.span-4
-          %ul#menu
-            %li
-              %a{:href => 'index.html'} Home
-            %li= link 'Philosophy'
-            %li= link 'Our Staff'
-            %li= link 'Pediatric'
-            %li= link 'Industrial Rehab'
-            %li= link 'Sports Enhancement'
-            %li= link 'Contact Us'
-
+        .sidebar
           %h5 Total Rehab
           641-236-4506
 

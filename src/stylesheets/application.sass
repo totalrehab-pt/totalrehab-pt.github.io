@@ -5,6 +5,16 @@
   :list-style-type none
   :margin-left 0px
 
+=inline-list
+  :list-style-type none
+  :margin 0px
+  :padding 0px
+  :display inline
+  li
+    :margin 0px
+    :padding 0px
+    :display inline
+
 // turns off the bullets for an entire list
 =no-bullets
   li
@@ -63,6 +73,29 @@ body
   h5
     :font-weight normal
     :margin-bottom 0
+
+#navigation
+  :background-color #F6822B
+  #menu
+    +inline-list
+    :margin-left 0
+    li
+      &:before
+        :content ' | '
+      &:first-child:before
+        :content ''
+      a
+        +uppercase
+        +hover-link
+        :color black
+        :font-weight bold
+        :padding 10px
+        &:hover
+          :color #FFB15F
+        &:visited
+          :color black
+          &:hover
+            :color #FFB15F
 
 div.content
   .header
@@ -124,24 +157,6 @@ div.caption
   :padding 10px
   :font-size 9px
   :line-height 1.2em
-
-#menu
-  +no-bullets
-  :margin-left 0
-  li
-    :border-bottom 1px dashed black
-    :margin-top 10px
-    a
-      +uppercase
-      +hover-link
-      :padding-top 10px
-      :color black
-      &:hover
-        :color #FFB15F
-      &:visited
-        :color black
-        &:hover
-          :color #FFB15F
 
 div.footer
   :margin-top 30px
