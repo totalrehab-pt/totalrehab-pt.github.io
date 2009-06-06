@@ -6,9 +6,9 @@
     = blueprintcss :show_grid => false, :compressed => false
   %body
     .container
-      #header.span-22
+      #header.span-24
         = img 'header.jpg'
-      #navigation.span-22
+      #navigation.span-24
         %ul#menu
           %li
             %a{:href => 'index.html'} Home
@@ -18,44 +18,55 @@
           %li= link 'Forms'
           %li= link 'Contact Us'
           %li= link 'Resources'
-      .span-22
-        .sidebar
-          %h5 Total Rehab
-          641-236-4506
+      #main.span-24
+        #sidebar.span-6
+          .vcard
+            %h3.fn.org Total Rehab
+            %h4 Orthopedic & Specialist
+            .adr
+              %span.type Work
+              .street-address Southview Plaza-Suite #4
+              .something 234 West Street South
+              %span.locality Grinnell
+              %abbr.region{:title => 'Iowa'} IA
+              %span.postal-code 50112
+              .country-name USA
 
-          %address
-            Southview Plaza-Suite #4
-            %br
-            234 West Street South
-            %br
-            Grinnell, IA 50112
+            .phone
+              Phone:
+              %span.tel
+                %span.type Work
+                641-236-4506
+            .phone
+              Fax:
+              %span.tel
+                %span.type Fax
+                641-236-4316
+          
+            .hours
+              Hours of Operation
+              %br
+              Monday - Friday
+              %br
+              7:30am - 6pm
 
-          %h5 Hours
-          7:30am - 6:00pm
+        #content.span-18.last
+          = yield
 
+      #footer.span-24
+        .quote.span-13
+          .tagline Never give up.  
+          For that is just the place
           %br
-          %a{:href => 'mailto:stacey@totalrehab-pt.com'} stacey@totalrehab-pt.com
+          and time the tide will turn.
+          .author - Harriet Beecher Stowe
 
-        .span-28.last
-          .span-14.content
-            = yield
-          .span-4.last
-            = partial current_page[1, current_page.index('.') - 1]
-
-        .span-22.footer
-          .quote.span-13
-            .tagline Never give up.  
-            For that is just the place
-            %br
-            and time the tide will turn.
-            .author - Harriet Beecher Stowe
-
-          .testimonial.span-8.last
-            I like the individual attention service at Total Rehab. 
-            I like the atmosphere here, comfortable, clean, nice, friendly and relaxing.
-            I feel the staff is extremely encouraging, caring, and well educated.
-            I know the ethics of this facility and ownership is very high.
-            I feel their concern/actions are always in my best interest.
-            
-            .author
-              \- Tom Rae
+        .testimonial.span-8.last
+          I like the individual attention service at Total Rehab. 
+          I like the atmosphere here, comfortable, clean, nice, friendly and relaxing.
+          I feel the staff is extremely encouraging, caring, and well educated.
+          I know the ethics of this facility and ownership is very high.
+          I feel their concern/actions are always in my best interest.
+          
+          .author
+            \- Tom Rae

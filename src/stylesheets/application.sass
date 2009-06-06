@@ -66,14 +66,6 @@ body
     :family Verdana
     :size 10pt
 
-#sidebar
-  address
-    :margin-top 10px
-    :font-style normal
-  h5
-    :font-weight normal
-    :margin-bottom 0
-
 #navigation
   :background-color #F66708
   :padding 10px 0
@@ -98,6 +90,38 @@ body
           :color black
           &:hover
             :color #FFB15F
+
+#main
+  :background-color black
+  :padding-top 10px
+#sidebar
+  :color white
+  .vcard
+    :padding-left 10px
+    .country-name
+      :display none
+    .adr
+      :margin-bottom 15px
+      .type
+        :display none
+      .locality:after
+        :content ', '
+    .tel
+      .type
+        :display none
+    .hours
+      :margin-top 15px
+  h3
+    +uppercase
+    :font-weight bold
+    :margin-bottom 5px
+    :color #F66708
+  h4
+    +uppercase
+    :color white
+    :margin-bottom 5px
+#content
+  :background-color white
 
 div.content
   .header
