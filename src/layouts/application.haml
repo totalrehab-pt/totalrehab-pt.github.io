@@ -18,9 +18,10 @@
           %li= link 'Forms'
           %li= link 'Contact Us'
           %li= link 'Resources'
+      #banner.span-24
+        = img 'banner.jpg', :width => '950'
       #main.span-24
         #sidebar.span-6
-          = img 'facilities.png', :width => '100%'
           .vcard
             %h3.fn.org Total Rehab
             %h4 Orthopedic & Specialist
@@ -52,6 +53,7 @@
               7:30am - 6pm
 
         #content.span-18.last
+          = img 'watermark.png', :class => 'watermark'
           = yield
 
       #footer.span-24
