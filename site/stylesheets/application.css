@@ -2,12 +2,77 @@ body {
   font-family: Verdana;
   font-size: 10pt; }
 
-#sidebar address {
-  margin-top: 10px;
-  font-style: normal; }
-#sidebar h5 {
-  font-weight: normal;
-  margin-bottom: 0; }
+#navigation {
+  background-color: #F66708;
+  padding: 10px 0; }
+  #navigation #menu {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    display: inline;
+    margin-left: 0; }
+    #navigation #menu li {
+      margin: 0px;
+      padding: 0px;
+      display: inline; }
+    #navigation #menu li:before {
+      content: ' | '; }
+    #navigation #menu li:first-child:before {
+      content: ''; }
+    #navigation #menu li a {
+      text-transform: uppercase;
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+      padding: 10px;
+      font-size: 14px; }
+      #navigation #menu li a:hover {
+        text-decoration: underline; }
+      #navigation #menu li a:hover {
+        color: #FFB15F; }
+      #navigation #menu li a:visited {
+        color: black; }
+        #navigation #menu li a:visited:hover {
+          color: #FFB15F; }
+
+#banner {
+  background-color: black;
+  padding-top: 10px; }
+
+#main {
+  background-color: black;
+  padding-top: 10px; }
+
+#sidebar {
+  color: white; }
+  #sidebar .vcard {
+    padding-left: 10px;
+    margin-top: 20px; }
+    #sidebar .vcard .country-name {
+      display: none; }
+    #sidebar .vcard .adr {
+      margin-bottom: 15px; }
+      #sidebar .vcard .adr .type {
+        display: none; }
+      #sidebar .vcard .adr .locality:after {
+        content: ', '; }
+    #sidebar .vcard .tel .type {
+      display: none; }
+    #sidebar .vcard .hours {
+      margin-top: 15px; }
+  #sidebar h3 {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #F66708; }
+  #sidebar h4 {
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 5px; }
+
+#content .watermark {
+  float: right;
+  clear: both; }
 
 div.content .header {
   text-transform: uppercase;
@@ -72,74 +137,19 @@ ul.homepage {
       list-style-image: url(../images/bullet.png);
       color: #999; }
 
-div.caption {
-  -moz-border-radius-bottomleft: 11px;
-  -moz-border-radius-bottomright: 0;
-  -moz-border-radius-topleft: 0;
-  -moz-border-radius-topright: 0;
-  -webkit-border-bottom-left-radius: 11px;
-  -webkit-border-bottom-right-radius: 0;
-  -webkit-border-top-left-radius: 0;
-  -webkit-border-top-right-radius: 0;
-  width: 116px;
-  background-color: #F6822B;
-  padding: 10px;
-  font-size: 9px;
-  line-height: 1.2em; }
-
-#menu {
-  margin-left: 0; }
-  #menu li {
-    list-style-type: none;
-    margin-left: 0px; }
-  #menu li {
-    border-bottom: 1px dashed black;
-    margin-top: 10px; }
-    #menu li a {
-      text-transform: uppercase;
-      text-decoration: none;
-      padding-top: 10px;
-      color: black; }
-      #menu li a:hover {
-        text-decoration: underline; }
-      #menu li a:hover {
-        color: #FFB15F; }
-      #menu li a:visited {
-        color: black; }
-        #menu li a:visited:hover {
-          color: #FFB15F; }
-
-div.footer {
-  margin-top: 30px; }
-  div.footer .quote {
-    text-transform: uppercase;
-    padding-top: 10px;
-    color: #FFB15F;
-    text-align: center;
-    line-height: 1em;
-    font-size: 20px; }
-    div.footer .quote .tagline {
-      font-style: italic;
-      font-size: 24px; }
-    div.footer .quote .author {
-      font-size: 12px; }
-  div.footer div.testimonial {
-    -moz-border-radius-bottomleft: 0;
-    -moz-border-radius-bottomright: 0;
-    -moz-border-radius-topleft: 11px;
-    -moz-border-radius-topright: 0;
-    -webkit-border-bottom-left-radius: 0;
-    -webkit-border-bottom-right-radius: 0;
-    -webkit-border-top-left-radius: 11px;
-    -webkit-border-top-right-radius: 0;
-    background-color: #F6822B;
+#footer {
+  background-color: black; }
+  #footer div.testimonial {
     background-image: url(../images/quotation_left.jpg);
     background-repeat: no-repeat;
+    float: right;
+    width: 400px;
+    margin-top: 30px;
     padding-top: 10px;
     padding-right: 10px;
     padding-bottom: 10px;
     padding-left: 25px;
     color: #EEE;
     text-align: center; }
-    div.footer div.testimonial .author {
+    #footer div.testimonial .author {
       margin-top: 10px; }
