@@ -124,64 +124,25 @@ body
     +uppercase
     :color white
     :margin-bottom 5px
-#content
+#sub_banner
   .watermark
     :float right
-    :clear both
-
-div.content
-  .header
-    +uppercase
-    +rounded_top_left
-    :background-color #F6822B
+#content
+  :color white
+  h2
     :color white
-    :font-size 14px
-    :padding-left 15px
-    :margin-bottom 3px
-  .details
-    +rounded_bottom_right
-    :border 1px solid black
-    :margin-bottom 20px
-    h3
-      :font-size 1.2em
-      :font-weight bold
-      :margin 5px
-      :padding 0px
-    p
-      :margin 5px
-      :padding 0px
-      :color #999
-      :font-weight bold
-      :line-height 1.2em
-    ul.checklist
-      :list-style-image url(../images/checkmark.png)
-      :padding 5px
-      li
-        +uppercase
-        :font-weight bold
-        p.description
-          :text-transform none
-        li
-          :font-size .9em
-          :text-transform none
-        
-    ul
-      :list-style-image url(../images/bullet.png)
+  h3
+    :color white
+  h5
+    :color white
+  a
+    :color #FFB15F
+    :text-decoration none
+    &:hover
+      :text-decoration underline
+    &:visited
+      :color white
 
-em
-  :color #FFB15F
-  +uppercase
-
-
-ul.homepage
-  :list-style-image none
-  li
-    :font-weight bold
-    ul
-      :list-style-image url(../images/bullet.png)
-      %li
-      :color #999
-      
 #footer
   :background-color black
   div.testimonial
