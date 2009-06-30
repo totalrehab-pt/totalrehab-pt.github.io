@@ -70,72 +70,24 @@ body {
     color: white;
     margin-bottom: 5px; }
 
-#content .watermark {
-  float: right;
-  clear: both; }
+#sub_banner .watermark {
+  float: right; }
 
-div.content .header {
-  text-transform: uppercase;
-  -moz-border-radius-bottomleft: 0;
-  -moz-border-radius-bottomright: 0;
-  -moz-border-radius-topleft: 11px;
-  -moz-border-radius-topright: 0;
-  -webkit-border-bottom-left-radius: 0;
-  -webkit-border-bottom-right-radius: 0;
-  -webkit-border-top-left-radius: 11px;
-  -webkit-border-top-right-radius: 0;
-  background-color: #F6822B;
-  color: white;
-  font-size: 14px;
-  padding-left: 15px;
-  margin-bottom: 3px; }
-div.content .details {
-  -moz-border-radius-bottomleft: 0;
-  -moz-border-radius-bottomright: 11px;
-  -moz-border-radius-topleft: 0;
-  -moz-border-radius-topright: 0;
-  -webkit-border-bottom-left-radius: 0;
-  -webkit-border-bottom-right-radius: 11px;
-  -webkit-border-top-left-radius: 0;
-  -webkit-border-top-right-radius: 0;
-  border: 1px solid black;
-  margin-bottom: 20px; }
-  div.content .details h3 {
-    font-size: 1.2em;
-    font-weight: bold;
-    margin: 5px;
-    padding: 0px; }
-  div.content .details p {
-    margin: 5px;
-    padding: 0px;
-    color: #999;
-    font-weight: bold;
-    line-height: 1.2em; }
-  div.content .details ul.checklist {
-    list-style-image: url(../images/checkmark.png);
-    padding: 5px; }
-    div.content .details ul.checklist li {
-      text-transform: uppercase;
-      font-weight: bold; }
-      div.content .details ul.checklist li p.description {
-        text-transform: none; }
-      div.content .details ul.checklist li li {
-        font-size: .9em;
-        text-transform: none; }
-  div.content .details ul {
-    list-style-image: url(../images/bullet.png); }
-
-em {
-  color: #FFB15F;
-  text-transform: uppercase; }
-
-ul.homepage {
-  list-style-image: none; }
-  ul.homepage li {
-    font-weight: bold; }
-    ul.homepage li ul {
-      list-style-image: url(../images/bullet.png);
-      color: #999; }
+#content {
+  color: white; }
+  #content h2 {
+    color: white; }
+  #content h3 {
+    color: white; }
+  #content h4 {
+    color: white; }
+  #content a {
+    text-decoration: none;
+    color: #FFB15F; }
+    #content a:hover {
+      text-decoration: underline; }
+    #content a:visited {
+      color: #FFB15F; }
 
 #footer {
   background-color: black; }
