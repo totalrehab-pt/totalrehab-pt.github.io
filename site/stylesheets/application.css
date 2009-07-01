@@ -70,38 +70,28 @@ body {
     color: white;
     margin-bottom: 5px; }
 
-#sub_banner .watermark {
-  float: right; }
-
 #content {
-  color: white; }
-  #content h2 {
-    color: white; }
-  #content h3 {
-    color: white; }
-  #content h4 {
-    color: white; }
+  background-color: white;
+  color: black; }
   #content a {
     text-decoration: none;
-    color: #FFB15F; }
+    color: #F66708; }
     #content a:hover {
       text-decoration: underline; }
     #content a:visited {
-      color: #FFB15F; }
+      color: #F66708; }
 
-#footer {
-  background-color: black; }
-  #footer div.testimonial {
-    background-image: url(../images/quotation_left.jpg);
-    background-repeat: no-repeat;
-    float: right;
-    width: 400px;
-    margin-top: 30px;
-    padding-top: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-    padding-left: 25px;
-    color: #EEE;
-    text-align: center; }
-    #footer div.testimonial .author {
-      margin-top: 10px; }
+#content_home {
+  background-color: black;
+  color: white; }
+
+#testimonial {
+  background-image: url(../images/quotation_left.jpg);
+  background-repeat: no-repeat;
+  color: #EEE;
+  text-align: center;
+  margin-top: 50px;
+  padding-left: 25px;
+  padding-top: 8px; }
+  #testimonial .author {
+    margin-top: 10px; }
