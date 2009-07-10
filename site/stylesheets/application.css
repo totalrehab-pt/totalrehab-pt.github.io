@@ -73,6 +73,9 @@ body {
 #content {
   background-color: white;
   color: black; }
+  #content.home {
+    background-color: black;
+    color: white; }
   #content a {
     text-decoration: none;
     color: #F66708; }
@@ -80,10 +83,6 @@ body {
       text-decoration: underline; }
     #content a:visited {
       color: #F66708; }
-
-#content_home {
-  background-color: black;
-  color: white; }
 
 #testimonial {
   background-image: url(../images/quotation_left.png);
