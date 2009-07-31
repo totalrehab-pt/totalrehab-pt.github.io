@@ -83,6 +83,9 @@ body {
       text-decoration: underline; }
     #content a:visited {
       color: #F66708; }
+  #content ul.no_bullets {
+    list-style-type: none;
+    margin-left: 0px; }
 
 #testimonial {
   background-image: url(../images/quotation_left.png);
