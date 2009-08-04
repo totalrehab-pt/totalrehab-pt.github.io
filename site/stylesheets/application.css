@@ -45,6 +45,10 @@ body {
 
 #sidebar {
   color: white; }
+  #sidebar #slideshow {
+    width: 220px;
+    height: 160px;
+    margin-left: 10px; }
   #sidebar .vcard {
     padding-left: 10px;
     margin-top: 20px; }
@@ -69,12 +73,6 @@ body {
     text-transform: uppercase;
     color: white;
     margin-bottom: 5px; }
-
-#sidebar #slideshow {
-  width:220px; 
-  height:160px; 
-  margin-left: 10px;
-}
 
 #content {
   background-color: white;
