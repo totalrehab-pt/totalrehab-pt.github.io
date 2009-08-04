@@ -70,6 +70,12 @@ body {
     color: white;
     margin-bottom: 5px; }
 
+#sidebar #slideshow {
+  width:220px; 
+  height:160px; 
+  margin-left: 10px;
+}
+
 #content {
   background-color: white;
   color: black; }

@@ -4,6 +4,7 @@
     %title Total Rehab - Orthopedic and Sports Specialist
     = stylesheets
     = blueprintcss :show_grid => false, :compressed => false
+    = javascripts(:jquery, 'jquery.cross-slide', 'totalrehab-pt')
   %body
     .container
       #header.span-24
@@ -20,6 +21,7 @@
           %li= link 'Resources'
       #main.span-24
         #sidebar.span-6
+          #slideshow
           .vcard
             %h3.fn.org Total Rehab
             %h4 Orthopedic & Sports Specialist
