@@ -3,15 +3,15 @@ $(document).ready(function() {
     sleep: 4,
     fade: 1
   }, [
-    { src: 'images/restaffimages/athlete.gif' },
-    { src: 'images/restaffimages/bungeerunner.gif' },
-    { src: 'images/restaffimages/gymarea.gif' },
-    { src: 'images/restaffimages/gymarea2.gif' },
-    { src: 'images/restaffimages/Handtherapy.gif' },
-    { src: 'images/restaffimages/Handtherapy2.gif' },
-    { src: 'images/restaffimages/ladder.gif' },
-    { src: 'images/restaffimages/peds.gif' },
-    { src: 'images/restaffimages/receptionist.gif' }
+    { src: 'images/athlete.gif' },
+    { src: 'images/bungeerunner.gif' },
+    { src: 'images/gymarea.gif' },
+    { src: 'images/gymarea2.gif' },
+    { src: 'images/handtherapy.gif' },
+    { src: 'images/handtherapy2.gif' },
+    { src: 'images/ladder.gif' },
+    { src: 'images/peds.gif' },
+    { src: 'images/receptionist.gif' }
   ]);
 });
 
