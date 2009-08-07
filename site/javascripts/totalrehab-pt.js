@@ -11,7 +11,7 @@ $(document).ready(function() {
     { src: 'images/handtherapy2.gif' },
     { src: 'images/ladder.gif' },
     { src: 'images/peds.gif' },
-    { src: 'images/receptionist.gif' }
+    { src: 'images/receptionist.gif' },
     { src: 'images/elderlyman.gif' }
   ]);
 });
