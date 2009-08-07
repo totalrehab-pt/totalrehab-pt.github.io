@@ -12,6 +12,7 @@ $(document).ready(function() {
     { src: 'images/ladder.gif' },
     { src: 'images/peds.gif' },
     { src: 'images/receptionist.gif' }
+    { src: 'images/elderlyman.gif' }
   ]);
 });
 
