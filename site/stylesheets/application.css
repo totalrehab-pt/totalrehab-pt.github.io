@@ -91,6 +91,9 @@ body {
     list-style-type: none;
     margin-left: 0px; }
 
+#map img {
+  border: 1px solid black; }
+
 #testimonial {
   background-image: url(../images/quotation_left.png);
   background-repeat: no-repeat;
