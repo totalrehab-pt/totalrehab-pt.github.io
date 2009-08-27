@@ -66,9 +66,10 @@ body
     :family Verdana
     :size 10pt
 
+#header
+  :margin 0
 #navigation
   :background url(../images/runner.png)
-  :padding 10px 0
   #menu
     +inline-list
     :margin-left 0
@@ -153,12 +154,16 @@ body
     :border 1px solid black
 
 #testimonial
-  :background-image url(../images/quotation_left.png)
-  :background-repeat no-repeat
   :color #EEE
   :text-align center
   :margin-top 100px
-  :padding-left 30px
-  :padding-top 10px
+  blockquote
+    :background-image url(../images/quotation_left.gif)
+    :background-repeat no-repeat
+    :background-position top left
+    :padding-left 40px
+    :padding-top 15px
+    :font-style normal
+    :color white
   .author
     :margin-top 10px
