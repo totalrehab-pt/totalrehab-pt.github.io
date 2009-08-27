@@ -2,15 +2,17 @@ body {
   font-family: Verdana;
   font-size: 10pt; }
 
+#header {
+  background: url(../images/header.jpg);
+  height: 175px; }
+
 #navigation {
-  background: url(../images/runner.png);
-  padding: 10px 0; }
+  background: url(../images/runner.png); }
   #navigation #menu {
     list-style-type: none;
     margin: 0px;
     padding: 0px;
-    display: inline;
-    margin-left: 0; }
+    display: inline; }
     #navigation #menu li {
       margin: 0px;
       padding: 0px;
@@ -98,12 +100,18 @@ body {
   border: 1px solid black; }
 
 #testimonial {
-  background-image: url(../images/quotation_left.png);
-  background-repeat: no-repeat;
   color: #EEE;
   text-align: center;
-  margin-top: 100px;
-  padding-left: 30px;
-  padding-top: 10px; }
+  margin-top: 100px; }
+  #testimonial blockquote {
+    margin: 0;
+    background-image: url(../images/quotation_left.gif);
+    background-repeat: no-repeat;
+    background-position: top left;
+    padding-left: 40px;
+    padding-top: 15px;
+    font-style: normal;
+    color: white; }
   #testimonial .author {
-    margin-top: 10px; }
+    margin-top: 10px;
+    margin-bottom: 20px; }
