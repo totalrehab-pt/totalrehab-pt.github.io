@@ -112,6 +112,12 @@ body {
     padding-top: 15px;
     font-style: normal;
     color: white; }
+    #testimonial blockquote p {
+      background-image: url(../images/quotation_right.gif);
+      background-repeat: no-repeat;
+      background-position: right bottom;
+      margin: 0;
+      padding-right: 40px; }
   #testimonial .author {
     margin-top: 10px;
     margin-bottom: 20px; }
