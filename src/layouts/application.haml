@@ -50,10 +50,14 @@
               Monday - Friday
               %br
               7:30am - 6pm
-
         #content.span-18.last
           .push-1.span-16.last
             = yield
+      #footer.span-24
+        .pull-2.fb_wrapper{:style=>'float:right'}
+          %script{:src =>"http://connect.facebook.net/en_US/all.js#xfbml=1"}
+          <fb:like-box href="http://www.totalrehab-pt.com" width="200" layout="button_count" show_faces="false" stream="false" header="false" colorscheme='light'></fb:like-box>
+
 
     :javascript
       var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
