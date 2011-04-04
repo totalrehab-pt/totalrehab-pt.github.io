@@ -1,123 +1,200 @@
+/* line 33 */
 body {
   font-family: Verdana;
-  font-size: 10pt; }
+  font-size: 10pt;
+}
 
+/* line 38 */
 #header {
   background: url(../images/header.jpg);
-  height: 175px; }
+  height: 175px;
+}
 
+/* line 41 */
+#footer {
+  margin-bottom: 15px;
+}
+
+/* line 43 */
 #navigation {
-  background: url(../images/runner.png); }
-  #navigation #menu {
-    list-style-type: none;
-    margin: 0px;
-    padding: 0px;
-    display: inline; }
-    #navigation #menu li {
-      margin: 0px;
-      padding: 0px;
-      display: inline; }
-    #navigation #menu li:before {
-      content: ' | '; }
-    #navigation #menu li:first-child:before {
-      content: ''; }
-    #navigation #menu li a {
-      text-transform: uppercase;
-      text-decoration: none;
-      color: black;
-      font-weight: bold;
-      padding: 10px;
-      font-size: 14px; }
-      #navigation #menu li a:hover {
-        text-decoration: underline; }
-      #navigation #menu li a:hover {
-        color: #FFB15F; }
-      #navigation #menu li a:visited {
-        color: black; }
-        #navigation #menu li a:visited:hover {
-          color: #FFB15F; }
+  background: url(../images/runner.png);
+}
+/* line 45 */
+#navigation #menu {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  display: inline;
+}
+/* line 13 */
+#navigation #menu li {
+  margin: 0px;
+  padding: 0px;
+  display: inline;
+}
+/* line 48 */
+#navigation #menu li:before {
+  content: " | ";
+}
+/* line 50 */
+#navigation #menu li:first-child:before {
+  content: "";
+}
+/* line 52 */
+#navigation #menu li a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  padding: 10px;
+  font-size: 14px;
+}
+/* line 30 */
+#navigation #menu li a:hover {
+  text-decoration: underline;
+}
+/* line 59 */
+#navigation #menu li a:hover {
+  color: #ffb15f;
+}
+/* line 61 */
+#navigation #menu li a:visited {
+  color: black;
+}
+/* line 63 */
+#navigation #menu li a:visited:hover {
+  color: #ffb15f;
+}
 
+/* line 66 */
 #banner {
   background-color: black;
-  padding-top: 10px; }
+  padding-top: 10px;
+}
 
+/* line 69 */
 #main {
   background-color: black;
-  padding-top: 10px; }
+  padding-top: 10px;
+}
 
+/* line 72 */
 #sidebar {
-  color: white; }
-  #sidebar #slideshow {
-    width: 220px;
-    height: 160px;
-    margin-left: 10px; }
-  #sidebar .vcard {
-    padding-left: 10px;
-    margin-top: 20px; }
-    #sidebar .vcard .country-name {
-      display: none; }
-    #sidebar .vcard .adr {
-      margin-bottom: 15px; }
-      #sidebar .vcard .adr .type {
-        display: none; }
-      #sidebar .vcard .adr .locality:after {
-        content: ', '; }
-    #sidebar .vcard .tel .type {
-      display: none; }
-    #sidebar .vcard .hours {
-      margin-top: 15px; }
-  #sidebar h3 {
-    text-transform: uppercase;
-    font-weight: bold;
-    margin-bottom: 5px;
-    color: #F66708; }
-  #sidebar h4 {
-    text-transform: uppercase;
-    color: white;
-    margin-bottom: 5px; }
+  color: white;
+}
+/* line 75 */
+#sidebar #slideshow {
+  width: 220px;
+  height: 160px;
+  margin-left: 10px;
+}
+/* line 80 */
+#sidebar .vcard {
+  padding-left: 10px;
+  margin-top: 20px;
+}
+/* line 83 */
+#sidebar .vcard .country-name {
+  display: none;
+}
+/* line 85 */
+#sidebar .vcard .adr {
+  margin-bottom: 15px;
+}
+/* line 87 */
+#sidebar .vcard .adr .type {
+  display: none;
+}
+/* line 89 */
+#sidebar .vcard .adr .locality:after {
+  content: ", ";
+}
+/* line 92 */
+#sidebar .vcard .tel .type {
+  display: none;
+}
+/* line 94 */
+#sidebar .vcard .hours {
+  margin-top: 15px;
+}
+/* line 96 */
+#sidebar h3 {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #f66708;
+}
+/* line 101 */
+#sidebar h4 {
+  text-transform: uppercase;
+  color: white;
+  margin-bottom: 5px;
+}
 
+/* line 105 */
 #content {
   background-color: white;
-  color: black; }
-  #content.home {
-    background-color: black;
-    background-image: url(../images/watermark.png);
-    background-repeat: no-repeat;
-    background-position: top right;
-    color: white; }
-  #content a {
-    text-decoration: none;
-    color: #F66708; }
-    #content a:hover {
-      text-decoration: underline; }
-    #content a:visited {
-      color: #F66708; }
-  #content ul.no_bullets {
-    list-style-type: none;
-    margin-left: 0px; }
+  color: black;
+}
+/* line 108 */
+#content.home {
+  background-color: black;
+  background-image: url(../images/watermark.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+  color: white;
+}
+/* line 114 */
+#content a {
+  text-decoration: none;
+  color: #f66708;
+}
+/* line 30 */
+#content a:hover {
+  text-decoration: underline;
+}
+/* line 117 */
+#content a:visited {
+  color: #f66708;
+}
+/* line 120 */
+#content ul.no_bullets {
+  list-style-type: none;
+  margin-left: 0px;
+}
 
+/* line 124 */
 #map img {
-  border: 1px solid black; }
+  border: 1px solid black;
+}
 
+/* line 127 */
 #testimonial {
-  color: #EEE;
+  color: #eeeeee;
   text-align: center;
-  margin-top: 100px; }
-  #testimonial blockquote {
-    margin: 0;
-    background-image: url(../images/quotation_left.gif);
-    background-repeat: no-repeat;
-    background-position: top left;
-    padding-left: 40px;
-    padding-top: 15px;
-    font-style: normal;
-    color: white; }
-    #testimonial blockquote p {
-      background-image: url(../images/quotation_right.gif);
-      background-repeat: no-repeat;
-      background-position: right bottom;
-      margin: 0;
-      padding-right: 40px; }
-  #testimonial .author {
-    margin-top: 10px;
-    margin-bottom: 20px; }
+  margin-top: 100px;
+}
+/* line 131 */
+#testimonial blockquote {
+  margin: 0;
+  background-image: url(../images/quotation_left.gif);
+  background-repeat: no-repeat;
+  background-position: top left;
+  padding-left: 40px;
+  padding-top: 15px;
+  font-style: normal;
+  color: white;
+}
+/* line 140 */
+#testimonial blockquote p {
+  background-image: url(../images/quotation_right.gif);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  margin: 0;
+  padding-right: 40px;
+}
+/* line 146 */
+#testimonial .author {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
