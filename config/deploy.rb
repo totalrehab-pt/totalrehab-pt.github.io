@@ -9,6 +9,10 @@ namespace :deploy do
     puts 'rebuilding site...'
     `staticmatic build .`
     # path: /home/content/w/i/r/wireframe/html/totalrehab-pt
-    top.upload "site", "/home/content/w/i/r/wireframe/html/totalrehab-pt", :via=> :scp, :recursive => true
+    # top.upload "site", "/home/content/w/i/r/wireframe/html/totalrehab-pt", :via=> :scp, :recursive => true
+    Dir['site/*'].each do |f|
+      puts "uploading: #{f}"
+      top.upload f, "/home/content/w/i/r/wireframe/html/totalrehab-pt/.", :via=> :scp, :recursive => true
+    end
   end
 end
