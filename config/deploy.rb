@@ -6,7 +6,9 @@ role :web, "ftp.codecrate.com"
 
 namespace :deploy do
   task :default do
+    puts 'rebuilding site...'
     `staticmatic build .`
-    top.upload "site", "/totalrehab-pt", :via=> :sftp, :recursive => true
+    # path: /home/content/w/i/r/wireframe/html/totalrehab-pt
+    top.upload "site", "/home/content/w/i/r/wireframe/html/totalrehab-pt", :via=> :scp, :recursive => true
   end
 end
