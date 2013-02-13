@@ -52,11 +52,9 @@ $(document).ready(function() {
     '  </span></span>'+
     '</div>'+
     '<div class="hours">'+
-    '  Hours'+
-    '  <br>'+
-    '  Monday - Friday'+
-    '  <br>'+
-    '  7:30am - 6pm'+
+    '  <p class="label">Hours</p>'+
+    '  <p class="availability">Monday - Friday</p>'+
+    '  <p class="availability">7:30am - 6pm</p>'+
     '</div>'+
     '</div>';
     google.maps.event.addListener(grinnellMarker, 'click', function() {
@@ -84,9 +82,8 @@ $(document).ready(function() {
     '  </span></span>'+
     '</div>'+
     '<div class="hours">'+
-    '  Hours'+
-    '  <br>'+
-    '  Available by appointment'+
+    '  <p class="label">Hours</p>'+
+    '  <span class="availability">Available by appointment</span>'+
     '</div>'+
     '</div>';
     google.maps.event.addListener(williamsburgMarker, 'click', function() {
