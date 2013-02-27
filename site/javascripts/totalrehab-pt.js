@@ -15,13 +15,14 @@ $(document).ready(function() {
     { src: 'images/elderlyman.gif' }
   ]);
 
-  if (google && google.maps) {
+  var $mapCanvas = $('#map_canvas');
+  if ($mapCanvas.length) {
     var mapOptions = {
       center: new google.maps.LatLng(41.7293671, -92.35),
       zoom: 9,
       mapTypeId: google.maps.MapTypeId.ROADMAP
     };
-    var map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
+    var map = new google.maps.Map($mapCanvas[0], mapOptions);
     var mapInfoWindow = new google.maps.InfoWindow();
 
     var grinnellMarker = new google.maps.Marker({
