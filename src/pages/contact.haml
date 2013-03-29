@@ -1,9 +1,24 @@
 .span-8
   %h2 Contact Total Rehab
 
-  Phone: 641-236-4506
-  %br
-  Fax: 641-236-4316
+  %ol.locations
+    %li
+      %h5 Grinnell
+      the Southview Plaza 234 West
+      %br
+      Street South in Grinnell
+      %br
+      Phone: 641-236-4506
+      %br
+      Fax: 641-236-4316
+    %li
+      %h5 Williamsburg
+      509 Court Street Williamsburg
+      %br
+      Phone: 319-668-9453
+      %br
+      Fax: 641-236-4316
+
 .span-8.last
   = img 'sign.jpg', :height => '100px'
 
@@ -22,13 +37,16 @@
     %li
       Lindsey Kofoot: physical therapist
       = link 'lindsey@totalrehab-pt.com', 'mailto:lindsey@totalrehab-pt.com'
+    %li
+      Jordan Vos: physical therapist
+      = link 'jordan@totalrehab-pt.com', 'mailto:jordan@totalrehab-pt.com'
+    %li
+      Julie Bartachek: office manager
+      = link 'julie@totalrehab-pt.com', 'mailto:julie@totalrehab-pt.com'
 
   %h3 Call Today to Begin Experiencing the Total Rehab Advantage!
 
-  %span Our offices are located at:
   %ul.locations
-    %li the Southview Plaza 234 West Street South in Grinnell
-    %li 509 Court Street Williamsburg
 
 #map.span-16.last
   %script{:src => 'https://maps.googleapis.com/maps/api/js?key=AIzaSyAJ0eEHrN2hph4oDF6qqG4W09mPeBfI7z0&sensor=false'}
