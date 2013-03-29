@@ -1,4 +1,4 @@
-//!main-orange = #F6822B
+$main_orange: #F6822B
 
 // Turn off the bullet for an element of a list
 =no-bullet
@@ -71,15 +71,8 @@ body
   :padding-top 10px
 #sidebar
   :color white
-
   .separator
     :margin-top 20px
-
-  #slideshow
-    :width 220px
-    :height 160px
-    :margin-left 10px
-
   .vcard
     :padding-left 10px
     :margin-top 20px
@@ -100,11 +93,16 @@ body
     +uppercase
     :font-weight bold
     :margin-bottom 5px
-    :color #F66708
+    :color $main_orange
   h4
     +uppercase
     :color white
     :margin-bottom 5px
+  h5
+    +uppercase
+    :font-weight bold
+    :color $main_orange
+    :margin-bottom 2px
 #content
   :background-color white
   :color black
@@ -116,9 +114,9 @@ body
     :color white
   a
     +hover-link
-    :color #F66708
+    :color $main_orange
     &:visited
-      :color #F66708
+      :color $main_orange
 
 ul.no_bullets
   +no-bullet

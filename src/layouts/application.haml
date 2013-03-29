@@ -7,70 +7,10 @@
     = javascripts(:jquery, 'jquery.cross-slide', 'totalrehab-pt')
   %body
     .container
-      #header.span-24
-      #navigation.span-24
-        %ul#menu
-          %li
-            %a{:href => 'index.html'} Home
-          %li= link 'Services'
-          %li= link 'About Us'
-          %li= link 'Staff'
-          %li= link 'Patient Information'
-          %li= link 'Contact'
-          %li= link 'Resources'
+      = partial 'header'
       #main.span-24
-        #sidebar.span-6
-          .vcard
-            %h3.fn.org Total Rehab
-            %h4 Orthopedic & Sports Specialist
-
-            %h4.separator Locations
-            %ul.locations.no_bullets
-              %li.adr
-                %span.type Work
-                %span.street-address Southview Plaza-Suite #4
-                %span.street-address 234 West Street South
-                %span.locality Grinnell
-                %abbr.region{:title => 'Iowa'} IA
-                %span.postal-code 50112
-                %span.country-name USA
-                .phone
-                  Phone:
-                  %span.tel
-                    %span.type Work
-                    641-236-4506
-                .phone
-                  Fax:
-                  %span.tel
-                    %span.type Fax
-                    641-236-4316
-              %li.adr
-                %span.type Work
-                %span.street-address 509 Court Street
-                %span.locality Williamsburg
-                %abbr.region{:title => 'Iowa'} IA
-                %span.postal-code 52361
-                %span.country-name USA
-                .phone
-                  Phone:
-                  %span.tel
-                    %span.type Work
-                    319-668-9453
-
+        = partial 'sidebar'
         #content.span-18.last
           .push-1.span-16.last
             = yield
-      #footer.span-24
-        .pull-2.fb_wrapper{:style=>'float:right'}
-          %script{:src =>"http://connect.facebook.net/en_US/all.js#xfbml=1"}
-          <fb:like href="http://www.totalrehab-pt.com" show_faces="false" width="200" font=""></fb:like>
-
-    :javascript
-      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-      </script>
-      <script type="text/javascript">
-      try {
-      var pageTracker = _gat._getTracker("UA-9431732-1");
-      pageTracker._trackPageview();
-      } catch(err) {}
+      = partial 'footer'
