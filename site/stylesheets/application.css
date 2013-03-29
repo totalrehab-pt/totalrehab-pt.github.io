@@ -82,65 +82,66 @@ body {
 #sidebar {
   color: white;
 }
-/* line 75 */
+/* line 74 */
 #sidebar .separator {
   margin-top: 20px;
 }
-/* line 78 */
-#sidebar #slideshow {
-  width: 220px;
-  height: 160px;
-  margin-left: 10px;
-}
-/* line 83 */
+/* line 76 */
 #sidebar .vcard {
   padding-left: 10px;
   margin-top: 20px;
 }
-/* line 86 */
+/* line 79 */
 #sidebar .vcard .country-name {
   display: none;
 }
-/* line 88 */
+/* line 81 */
 #sidebar .vcard .adr {
   margin-bottom: 15px;
 }
-/* line 90 */
+/* line 83 */
 #sidebar .vcard .adr .type {
   display: none;
 }
-/* line 92 */
+/* line 85 */
 #sidebar .vcard .adr .locality:after {
   content: ", ";
 }
-/* line 95 */
+/* line 88 */
 #sidebar .vcard .tel .type {
   display: none;
 }
-/* line 97 */
+/* line 90 */
 #sidebar .vcard .hours {
   margin-top: 15px;
 }
-/* line 99 */
+/* line 92 */
 #sidebar h3 {
   text-transform: uppercase;
   font-weight: bold;
   margin-bottom: 5px;
-  color: #f66708;
+  color: #f6822b;
 }
-/* line 104 */
+/* line 97 */
 #sidebar h4 {
   text-transform: uppercase;
   color: white;
   margin-bottom: 5px;
 }
+/* line 101 */
+#sidebar h5 {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #f6822b;
+  margin-bottom: 2px;
+}
 
-/* line 108 */
+/* line 107 */
 #content {
   background-color: white;
   color: black;
 }
-/* line 111 */
+/* line 110 */
 #content.home {
   background-color: black;
   background-image: url(../images/watermark.png);
@@ -148,59 +149,65 @@ body {
   background-position: top right;
   color: white;
 }
-/* line 117 */
+/* line 116 */
 #content a {
   text-decoration: none;
-  color: #f66708;
+  color: #f6822b;
 }
 /* line 30 */
 #content a:hover {
   text-decoration: underline;
 }
-/* line 120 */
+/* line 119 */
 #content a:visited {
-  color: #f66708;
+  color: #f6822b;
+}
+/* line 122 */
+#content ol.locations h5 {
+  color: #f6822b;
+  margin-bottom: 2px;
+  text-transform: uppercase;
 }
 
-/* line 123 */
+/* line 127 */
 ul.no_bullets {
   list-style-type: none;
   margin-left: 0px;
 }
 
-/* line 126 */
+/* line 130 */
 #map_canvas {
   width: 100%;
   height: 500px;
 }
 
-/* line 131 */
+/* line 135 */
 .map_info h2 {
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 0;
 }
-/* line 135 */
+/* line 139 */
 .map_info p {
   margin-bottom: 0;
 }
-/* line 137 */
+/* line 141 */
 .map_info .label {
   font-weight: bold;
 }
 
-/* line 140 */
+/* line 144 */
 #map img {
   border: 1px solid black;
 }
 
-/* line 143 */
+/* line 147 */
 #testimonial {
   color: #eeeeee;
   text-align: center;
   margin-top: 100px;
 }
-/* line 147 */
+/* line 151 */
 #testimonial blockquote {
   margin: 0;
   background-image: url(../images/quotation_left.gif);
@@ -211,7 +218,7 @@ ul.no_bullets {
   font-style: normal;
   color: white;
 }
-/* line 156 */
+/* line 160 */
 #testimonial blockquote p {
   background-image: url(../images/quotation_right.gif);
   background-repeat: no-repeat;
@@ -219,7 +226,7 @@ ul.no_bullets {
   margin: 0;
   padding-right: 40px;
 }
-/* line 162 */
+/* line 166 */
 #testimonial .author {
   margin-top: 10px;
   margin-bottom: 20px;
