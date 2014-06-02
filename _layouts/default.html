@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Total Rehab - Orthopedic and Sports Specialist</title>
+    <link rel="stylesheet" href="/stylesheets/blueprint/screen.css" type="text/css" media="screen, projection" />
+    <link rel="stylesheet" href="/stylesheets/blueprint/print.css" type="text/css" media="print" />
+    <!--[if lt IE 8]>
+      <link rel="stylesheet" href="/stylesheets/blueprint/ie.css" type="text/css" media="screen, projection" />
+    <![endif]-->
+    <link rel="stylesheet" href="/stylesheets/application.css" type="text/css" />
+    <script type="text/javascript" src="/javascripts/jquery.js"></script>
+    <script type="text/javascript" src="/javascripts/totalrehab-pt.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      {% include header.html %}
+      <div id="main" class="span-24">
+        {% include sidebar.html %}
+        <div id="content" class="span-18 last">
+          <div class="push-1 span-16 last">
+            {{ content }}
+          </div>
+        </div>
+      </div>
+      {% include footer.html %}
+    </div>
+  </body>
+</html>

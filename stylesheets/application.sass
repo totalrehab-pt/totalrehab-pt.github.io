@@ -1,0 +1,168 @@
+$main_orange: #F6822B
+
+// Turn off the bullet for an element of a list
+=no-bullet
+  :list-style-type none
+  :margin-left 0px
+
+=inline-list
+  :list-style-type none
+  :margin 0px
+  :padding 0px
+  :display inline
+  li
+    :margin 0px
+    :padding 0px
+    :display inline
+
+// turns off the bullets for an entire list
+=no-bullets
+  li
+    +no-bullet
+
+//make text uppercase
+=uppercase
+  :text-transform uppercase
+
+// a link that only has an underline when you hover over it
+=hover-link
+  :text-decoration none
+  &:hover
+    :text-decoration underline
+
+body
+  :font
+    :family Verdana
+    :size 10pt
+
+#header
+  :background url(../images/header.jpg)
+  :height 175px
+#footer
+  :margin 15px 0
+#navigation
+  :background url(../images/runner.png)
+  #menu
+    +inline-list
+    li
+      &:before
+        :content ' | '
+      &:first-child:before
+        :content ''
+      a
+        +uppercase
+        +hover-link
+        :color black
+        :font-weight bold
+        :padding 5px
+        :font-size 14px
+        &:hover
+          :color #FFB15F
+        &:visited
+          :color black
+          &:hover
+            :color #FFB15F
+
+#banner
+  :background-color black
+  :padding-top 10px
+#main
+  :background-color black
+  :padding-top 10px
+#sidebar
+  :color white
+  .separator
+    :margin-top 20px
+  .vcard
+    :padding-left 10px
+    :margin-top 20px
+    .country-name
+      :display none
+    .adr
+      :margin-bottom 15px
+      .type
+        :display none
+      .locality:after
+        :content ', '
+    .tel
+      .type
+        :display none
+    .hours
+      :margin-top 15px
+  h3
+    +uppercase
+    :font-weight bold
+    :margin-bottom 5px
+    :color $main_orange
+  h4
+    +uppercase
+    :color white
+    :margin-bottom 5px
+  h5
+    +uppercase
+    :font-weight bold
+    :color $main_orange
+    :margin-bottom 2px
+
+#content
+  :background-color white
+  :color black
+  &.home
+    :background-color black
+    :background-image url(../images/watermark.png)
+    :background-repeat no-repeat
+    :background-position top right
+    :color white
+  a
+    +hover-link
+    :color $main_orange
+    &:visited
+      :color $main_orange
+  ol.locations
+    h5
+      :color $main_orange
+      :margin-bottom 2px
+      +uppercase
+
+ul.no_bullets
+  +no-bullet
+
+#map_canvas
+  :width 100%
+  :height 500px
+
+.map_info
+  h2
+    :font-size 20px
+    :font-weight bold
+    :margin-bottom 0
+  p
+    :margin-bottom 0
+  .label
+    :font-weight bold
+#map
+  img
+    :border 1px solid black
+
+#testimonial
+  :color #EEE
+  :text-align center
+  :margin-top 100px
+  blockquote
+    :margin 0
+    :background-image url(../images/quotation_left.gif)
+    :background-repeat no-repeat
+    :background-position top left
+    :padding-left 40px
+    :padding-top 15px
+    :font-style normal
+    :color white
+    p
+      :background-image url(../images/quotation_right.gif)
+      :background-repeat no-repeat
+      :background-position right bottom
+      :margin 0
+      :padding-right 40px
+  .author
+    :margin-top 10px
+    :margin-bottom 20px
