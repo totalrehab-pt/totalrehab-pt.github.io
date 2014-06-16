@@ -5,9 +5,6 @@ description: "Write an awesome description for your new site here. You can edit 
 baseurl: ""
 url: "http://totalrehab-pt.com"
 
-gems:
-  - jekyll-sass
-
 # Build settings
 markdown: kramdown
 permalink: pretty
