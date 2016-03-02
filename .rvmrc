@@ -1,5 +1,0 @@
-rvm use @totalrehab --create
-if ! command -v bundle ; then
-  gem install bundler
-  bundle install --local
-fi
